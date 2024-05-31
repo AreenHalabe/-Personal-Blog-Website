@@ -1,0 +1,200 @@
+
+a{
+    color: rgba(7, 113, 252, 0.993);
+}
+
+
+
+
+
+
+.container{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 100px ;
+    justify-content: center;
+    grid-template-areas:
+    "navbar navbar"
+    "cardone cardtow"
+    "cardthree cardfour"
+    "cardfive cardsix";
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+/*
+
+.container {
+    margin: auto;
+    display: grid;
+    width: 90%; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+*/
+
+
+
+#nav{
+    grid-area: navbar;
+}
+
+#card-one-blue{
+    grid-area: cardone;
+}
+
+#card-two-blue{
+    grid-area: cardthree;
+}
+#card-three-blue{
+    grid-area: cardfive;
+}
+
+#card-one-green{
+    grid-area: cardtow;
+}
+
+#card-two-green{
+    grid-area: cardfour;
+}
+#card-three-green{
+    grid-area: cardsix;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+}
+
+#title-search{
+    text-decoration: underline;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+#icon{
+    width: 24px;
+    height: 24px; 
+}
+
+#subscribe{
+    text-decoration: underline;
+    color: gray;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #d1d1d1, 0 6px 20px 0 #d1d1d1;
+    background-color: white;
+
+    justify-content: space-between;
+    gap: 40px;
+}
+.top{
+    color: rgba(0, 132, 255, 0.959);
+}
+
+.topp{
+    color: green;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top>label{
+    font-weight: 900;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.center>div{
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    font-size:xx-large;
+    font-weight: bold;
+    
+}
+
+#date{
+    font-weight:100;
+    color: gray;
+}
+
+#description{
+    font-size: large;
+}
+
+
+
+@media (min-width:300px) and (max-width:1250px) {
+    .container{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "navbar"
+        "cardone"
+        "cardtow"
+        "cardthree"
+         "cardfour"
+        "cardfive"
+         "cardsix";
+
+    }
+
+    
+    #nav{
+        grid-area: navbar;
+    }
+    
+    #card-one-blue{
+        grid-area: cardone;
+    }
+    
+    #card-two-blue{
+        grid-area: cardthree;
+    }
+    #card-three-blue{
+        grid-area: cardfive;
+    }
+    
+    #card-one-green{
+        grid-area: cardtow;
+    }
+    
+    #card-two-green{
+        grid-area: cardfour;
+    }
+    #card-three-green{
+        grid-area: cardsix;
+    }
+    
+    
+    
+}
